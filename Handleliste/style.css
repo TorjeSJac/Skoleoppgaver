@@ -1,0 +1,21 @@
+.Handleliste{
+    margin: auto;
+    width: 14%;
+    height: 50%;
+    background-color: aqua;
+}
+body{
+    background-color: aqua;
+}
+#items-list {
+    list-style-type: none;
+    padding: 0;
+}
+.completed {
+    text-decoration: line-through;
+    color: #999;
+}
+button{
+    border-radius: 5px;
+    background-color: lightblue;
+}
