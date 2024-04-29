@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!--det meste er skrevet med ChatGPT men jeg fikset noe med at når du strater den og når du klikker på C så står det ingenting istedet for 0 -->
+    <div class="calculator">
+  <div class="result" id="result"></div>
+  <table>
+    <tr>
+      <td><input type="button" value="7" onclick="addToResult('7')"></td>
+      <td><input type="button" value="8" onclick="addToResult('8')"></td>
+      <td><input type="button" value="9" onclick="addToResult('9')"></td>
+      <td><input type="button" value="/" onclick="addToResult('/')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="4" onclick="addToResult('4')"></td>
+      <td><input type="button" value="5" onclick="addToResult('5')"></td>
+      <td><input type="button" value="6" onclick="addToResult('6')"></td>
+      <td><input type="button" value="*" onclick="addToResult('*')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="1" onclick="addToResult('1')"></td>
+      <td><input type="button" value="2" onclick="addToResult('2')"></td>
+      <td><input type="button" value="3" onclick="addToResult('3')"></td>
+      <td><input type="button" value="-" onclick="addToResult('-')"></td>
+    </tr>
+    <tr>
+      <td><input type="button" value="0" onclick="addToResult('0')"></td>
+      <td><input type="button" value="." onclick="addToResult('.')"></td>
+      <td><input type="button" value="=" onclick="calculate()"></td>
+      <td><input type="button" value="+" onclick="addToResult('+')"></td>
+    </tr>
+    <tr>
+      <td colspan="4"><input type="button" value="C" onclick="clearResult()"></td>
+    </tr>
+  </table>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
